@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
+using System.Security.Cryptography;
+using System.Threading;
 
 namespace BehaviorTree.Utility
 {
@@ -71,6 +73,16 @@ namespace BehaviorTree.Utility
                 list[k] = list[n];
                 list[n] = value;
             }
+        }
+    }
+    
+    public static class ThreadSafeRandom
+    {
+        [ThreadStatic] private static Random _local;
+
+        public static Random ThisThreadsRandom
+        {
+            get { return _local ?? (_local = new Random(unchecked(Environment.TickCount * 31 + Thread.CurrentThread.ManagedThreadId))); }
         }
     }
 }
