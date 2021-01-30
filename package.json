@@ -1,15 +1,15 @@
 {
-    "name": "com.behavior-tree",
-    "version": "1.0.0",
-    "displayName": "BehaviorTree for Unity",
-    "description": "BehaviorTree",
-    "unity": "2020.1",
-    "dependencies": {},
-    "keywords": [
-      "behaviorTree"
-    ],
-    "author": {
-      "name": "Netter36",
-      "url": "https://github.com/netter36"
-    }
+  "name": "com.behavior-tree",
+  "version": "1.0.1",
+  "displayName": "BehaviorTree",
+  "description": "BehaviorTree for Unity",
+  "unity": "2020.1",
+  "dependencies": {},
+  "keywords": [
+    "behaviorTree"
+  ],
+  "author": {
+    "name": "Netter36",
+    "url": "https://github.com/netter36"
+  }
 }
