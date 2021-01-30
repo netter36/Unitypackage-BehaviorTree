@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "BehaviorTree for Unity",
     "description": "BehaviorTree",
-    "unity": "2020.1.13f",
+    "unity": "2020.1",
     "dependencies": {},
     "keywords": [
       "behaviorTree"
