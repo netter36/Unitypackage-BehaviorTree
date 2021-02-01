@@ -20,16 +20,6 @@ namespace BehaviorTree
                 throw new Exception("하나의 노드만 추가 가능합니다.");
             }
         }
-        
-        public void Add(NodeStates nodeStates)
-        {
-            Add(new ActionNode(() => nodeStates));
-        }
-
-        public void Add(bool isValue)
-        {
-            Add(new Condition(() => isValue));
-        }
 
         protected abstract NodeStates OnUpdate();
         

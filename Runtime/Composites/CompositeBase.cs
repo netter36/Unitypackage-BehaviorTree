@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditorInternal.VersionControl;
+using UnityEngine.Internal.VR;
 
 namespace BehaviorTree
 {
@@ -12,16 +14,6 @@ namespace BehaviorTree
         public void Add(Node node)
         {
             Nodes.Add(node);
-        }
-
-        public void Add(NodeStates nodeStates)
-        {
-            Add(new ActionNode(() => nodeStates));
-        }
-
-        public void Add(bool isValue)
-        {
-            Add(new Condition(() => isValue));
         }
 
         protected abstract NodeStates OnUpdate();
