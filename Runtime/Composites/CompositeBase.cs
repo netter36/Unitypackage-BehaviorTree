@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditorInternal.VersionControl;
-using UnityEngine.Internal.VR;
 
 namespace BehaviorTree
 {
